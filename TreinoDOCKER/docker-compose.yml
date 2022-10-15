@@ -1,0 +1,14 @@
+version: '2.10.2'
+
+services:
+  aula_etice_docker:
+
+    container_name: Treino_Docker
+
+    build: ./backend/
+
+    ports:
+      - '8080:80'
+
+    volumes:
+      - ./backend/src:/var/www/html/
